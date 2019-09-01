@@ -63,6 +63,31 @@ docker run -it --rm -v /root/code:/code python python /code/abc.py
 *   The best part is whatever we made changes in the base OS files it will copy in realtime inside the container also.
 
 ## GO lang
+* It was 1st introduced in 2008 - 2009
+* In this language we will write allmost everything inside a function.
+* In Go we can import a liberary online without installing in your base machine.
+* GoLang is both compile and Run
+* It dosent dupport dead code
+
+### Go Lang sample code
+```go
+package main //defining main function
+import "fmt"
+
+func main(){
+    // This is a dead code because this variable is not been used anywhere in the program
+    a:=20 // To create a variable in goLang
+
+    // Fmt have this function for printing a line
+    fmt.Println("Hello world, welcome to goLang")
+}
+```
+*   A dead code is a code which is written by the programmer but not been used in the code anywhere.
+*   As such goLang wont allow you to execute a  dead code it will simply give an error.
+### Simple way to run a go file in docker
+```bash
+docker run -it --rm -v /root/code:/code golang go run /code/hello.go
+```
 
  
 
