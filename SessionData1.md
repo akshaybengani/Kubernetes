@@ -88,9 +88,8 @@ func main(){
 ```bash
 docker run -it --rm -v /root/code:/code golang go run /code/hello.go
 ```
-
- 
-
-
-
-
+## Why Kubernetes
+*   When we have a lot of containers launching dynamically by users in realtime, we might also get errors and problems with the containers.
+* Since we are running 1000's of containers at same time and we need to resolve the errors as such we need to do orchestration.
+* Managing each and every container that it will not shutdown or crash this process is called container orchestration.
+* In order to do this we need kubernetes with app engine to manage and process container orchestration.
